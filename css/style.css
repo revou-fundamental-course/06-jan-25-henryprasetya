@@ -10,6 +10,30 @@ a {
     margin-right: 10px;
 }
 
+.logo-icon-upper1{
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/logo-icon-linkedin.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.logo-icon-upper2{
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/logo-icon-github.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+.logo-icon-upper3{
+    height: 25px;
+    width: 25px;
+    background-image: url('../images/logo-icon-instagram.png');
+    background-size: cover;
+    margin-right: 10px;
+}
+
+
 .main-header {
     display: block;
     width: 100%;
@@ -18,7 +42,7 @@ a {
 
 .upper-nav {
     display: flex;
-    padding: 5px;
+    padding: 5px 0 5px 90px;
     box-sizing: border-box;
     background-color: #133E87;
 }
@@ -29,10 +53,11 @@ a {
 }
 .inner-nav {
     display: block;
-    padding: 15px;
+    padding: 15px 100px 15px 0;
     align-items: end;
-    background-color: CBDCEB;
+    background-color: white;
     box-shadow : 0 1px 18px -3px rgba(122, 121, 121, .48);
+
 }
 
 .inner {
@@ -42,5 +67,5 @@ a {
 
 .inner > a {
     color: black;
-    margin-right: 10px;
+    margin-right: 20px;
 }
