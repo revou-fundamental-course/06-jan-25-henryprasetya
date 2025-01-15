@@ -34,3 +34,46 @@ window.onload = function() {
   }
   changeName();
 };
+
+
+function formValidation() {
+  let nameInput = document.getElementById('name-input').value;
+  let lahirInput = document.getElementById('lahir-input').value;
+  let jenisKelamin = document.getElementById('jenis-kelamin').value;
+  let pesanInput = document.getElementById('pesan-input').value;
+
+  console.log(nameInput);
+  console.log(lahirInput);
+  console.log(jenisKelamin);
+  console.log(pesanInput);
+
+  if (nameInput === "") {
+    alert('Name must be filled out');
+  }
+  else {
+    document.getElementById('outpur-nama').innerHTML = nameInput;
+  }
+
+  if (lahirInput === "") {
+    alert('Date of Birth must be filled out');
+  }
+  else {
+    document.getElementById('output-lahir').innerHTML = lahirInput;
+  }
+
+  if (jenisKelamin === "") {
+    alert('Jenis Kelamin must be filled out');
+  }
+  else {
+    document.getElementById('output-kelamin').innerHTML = jenisKelamin;
+  }
+
+  if (pesanInput === "") {
+    alert('Pesan must be filled out');
+  }
+  else {
+    document.getElementById('output-pesan').innerHTML = pesanInput;
+  }
+}
+
+document.getElementById('submit-btn').addEventListener('click', formValidation);

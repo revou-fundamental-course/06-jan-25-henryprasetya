@@ -5,7 +5,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
@@ -135,29 +134,29 @@
                 <!-- Box Form -->
                 <div class="message-box">
                 <form id="userForm">
-                    <h3>Hubungi Kami</h3>
+                    <h3>Message Us</h3>
                     <div class="row">
                         <div class="col-25">
-                            <label>Nama</label>
+                            <label for="name-input">Nama</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" required>
+                            <input type="text" id="name-input" placeholder="Masukkan Nama">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label>Tanggal Lahir</label>
+                            <label for="lahir-input">Tanggal Lahir</label>
                         </div>
                         <div class="col-75">
-                            <input type="date" id="Lahir" name="Lahir" placeholder="Masukkan tanggal lahir" required>
+                            <input type="date" id="lahir-input" placeholder="Masukkan tanggal lahir">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label>Jenis Kelamin</label>
+                            <label for="jenis-kelamin">Jenis Kelamin</label>
                         </div>
                         <div class="col-75">
-                            <select id="gender" name="gender" required>
+                            <select id="jenis-kelamin" name="jenis-kelamin">
                                 <option value="" disabled selected>Jenis Kelamin</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -166,20 +165,23 @@
                     </div>
                     <div class="row">
                         <div class="col-25">
-                            <label>Pesan</label>
+                            <label for="pesan-input">Pesan</label>
                         </div>
                         <div class="col-75">
-                            <input type="textarea" id="pesan" name="pesan" placeholder="Masukkan Pesan" required>
+                            <input type="textarea" id="pesan-input" name="pesan" placeholder="Masukkan Pesan">
                         </div>
                     </div>
-                    <input type="submit" value="Submit"> 
                 </form>
+                <button type="submit" id="submit-btn">Submit</button> 
                 </div>
 
                 <!-- Box Response Form -->
-                <div class="message-response">
-                    <h3>Response</h3>
-                    <p><span id="gender">Data</span> Muncul disini</p>
+                <div id="message-response">
+                    <h3>Response Box</h3>
+                    <h4>Nama : <span id="outpur-nama"></span></h4>
+                    <h4>Tanggal Lahir : <span id="output-lahir"></span></h4>
+                    <h4>Jenis Kelamin : <span id="output-kelamin"></span></h4>
+                    <h4>Pesan : <span id="output-pesan"></span></h4>
                 </div> 
             </div>
             </header>
@@ -187,9 +189,9 @@
     </main>
     <footer class="container-footer">
         <div class="footer-content">
-            <p>Created by Henry Prasetya</p>
+            <p>Fundamental Portofolio by Henry Candra Prasetya</p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script nonce="<random-nonce>" src="js/script.js"></script>
 </body>
 </html>
