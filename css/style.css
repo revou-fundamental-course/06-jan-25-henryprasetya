@@ -95,7 +95,7 @@ main {
 /* background-color: #f7fdfe ; */
 #home-page {
     display: block;
-    height: auto ;
+    height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: #2f1ea2;
@@ -276,8 +276,8 @@ button:hover {
     font-size: 25px;
     padding: 30px;
 }
-/* Our Headquarter Page */
 
+/* Our Headquarter Page */
 #headquarter > h2 {
     padding: 20px 20px 10px 20px;
     text-align: center;
